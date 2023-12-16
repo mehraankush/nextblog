@@ -1,7 +1,7 @@
 import React from 'react'
-import { ModeToggle } from '../mode-toggle'
 import Link from 'next/link'
 import NavLinks from '@/data/NavLinks'
+import ThemeSwitch from './ThemeSwitch'
 
 const Navbar = () => {
     return (
@@ -28,7 +28,7 @@ const Navbar = () => {
                             </Link>
                         ))}
 
-                    <ModeToggle />
+                    <ThemeSwitch />
                 </div>
             </div>
         </header>
