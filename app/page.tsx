@@ -1,4 +1,4 @@
-import { allPosts,allPages } from "@/.contentlayer/generated"
+import { allPosts } from "@/.contentlayer/generated"
 import MainSection from "@/components/HomePage/MainSection"
 
 export default function Home() {

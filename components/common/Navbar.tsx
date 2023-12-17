@@ -11,7 +11,7 @@ const Navbar = () => {
                     <Link href="/">
                         <div className="flex items-center justify-between">
                             <div className="hidden p-2 text-2xl font-semibold sm:block">
-                                Blogpage
+                                Blog Me
                             </div>
                         </div>
                     </Link>

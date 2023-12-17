@@ -9,7 +9,7 @@ type BlogPageProps = {
 
 const BlogHeading = ( { title,date }:BlogPageProps) => {
   return (
-    <header className="pt-6 xl:pb-6 ">
+    <header className="pt-6 xl:pb-6 w-full">
     <div className="space-y-1 text-center">
       <dl className="space-y-10">
         <div>
