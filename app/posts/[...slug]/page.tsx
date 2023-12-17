@@ -54,7 +54,7 @@ export default async function PostPage({ params }: PostProps) {
   return (
     <div className="flex justify-center flex-col items-center">
           <BlogHeading title={post.title} date={post.date}/>
-        <article className="py-6 prose dark:prose-invert ">
+        <article className="py-6 prose lg:prose-xl dark:prose-invert ">
           {post.description && (
             <p className="text-xs mt-0 px-5 text-center text-slate-500 dark:text-slate-400">
               {post.description}
