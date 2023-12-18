@@ -15,7 +15,7 @@ const Artical = ({ slug, date, title, description ,img}:any) => {
                     <dt className="sr-only">Published on</dt>
                     <dd >
                         <div className='border border-white/80 p-1 rounded-md w-[15rem]'>
-                          <Image src={img} alt='Vlog Image' width={400} height={100} className='rounded-md'/>
+                          <Image src={`${img}`} alt='Vlog Image' width={400} height={100} className='rounded-md'/>
                         </div>
                     </dd>
                 </dl>
