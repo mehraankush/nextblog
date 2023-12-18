@@ -19,7 +19,7 @@ export default function MainSection({ posts }:any) {
           </p>
         </div>
 
-          <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+          <ul className=" divide-y divide-gray-200 dark:divide-gray-700">
             {!posts.length && 'No posts found.'}
 
             {
