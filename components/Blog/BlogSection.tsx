@@ -1,7 +1,7 @@
 import Artical from '../HomePage/Articals'
 
 export default function BlogSection({ posts }:any) {
-  console.log(posts)
+  // console.log(posts)
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">

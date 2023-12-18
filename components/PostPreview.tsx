@@ -3,7 +3,7 @@ import Link from "next/link";
 
 
 const PostPreview = (props: any) => {
-  console.log(props)
+  // console.log(props)
   return (
     <div
       className="border border-slate-300 p-4 rounded-md shadow-sm
