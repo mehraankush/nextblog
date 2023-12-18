@@ -3,7 +3,6 @@ import Link from 'next/link'
 import React from 'react'
 import ReadMore from './ReadMore'
 import { datetime } from '@/lib/TimeFormator'
-import Image from 'next/image'
 
 
 const Artical = ({ slug, date, title, description ,img}:any) => {
@@ -14,8 +13,8 @@ const Artical = ({ slug, date, title, description ,img}:any) => {
                 <dl>
                     <dt className="sr-only">Published on</dt>
                     <dd >
-                        <div className='border border-white/80 p-1 rounded-md w-[15rem]'>
-                          <Image src={`${img}`} alt='Vlog Image' width={400} height={100} className='rounded-md'/>
+                        <div className=' p-1 rounded-md w-[15rem]'>
+                        <time className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">{datetime(date)}</time>
                         </div>
                     </dd>
                 </dl>
@@ -25,7 +24,7 @@ const Artical = ({ slug, date, title, description ,img}:any) => {
 
                         {/* title  */}
                         <div>
-                             <time className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">{datetime(date)}</time>
+                            
                             <h2 className="text-2xl font-bold leading-8 tracking-tight">
                                 <Link
                                     href={`${slug}`}
