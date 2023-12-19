@@ -1,11 +1,20 @@
-
+"use client"
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import ReadMore from './ReadMore'
 import { datetime } from '@/lib/TimeFormator'
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Artical = ({ slug, date, title, description ,img}:any) => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            once: false,
+        });
+    }, []);
+
     return (
         <article>
             <div className="flex gap-5">
@@ -14,7 +23,7 @@ const Artical = ({ slug, date, title, description ,img}:any) => {
                     <dt className="sr-only">Published on</dt>
                     <dd >
                         <div className=' p-1 rounded-md w-[15rem]'>
-                        <time className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">{datetime(date)}</time>
+                        <time className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400" data-aos="fade-right" data-aos-duration="810">{datetime(date)}</time>
                         </div>
                     </dd>
                 </dl>
@@ -28,14 +37,14 @@ const Artical = ({ slug, date, title, description ,img}:any) => {
                             <h2 className="text-2xl font-bold leading-8 tracking-tight">
                                 <Link
                                     href={`${slug}`}
-                                    className="text-gray-900 dark:text-gray-100"
+                                    className="text-gray-900 dark:text-gray-100" data-aos="fade-up" data-aos-duration="800"
                                 >
                                     {title}
                                 </Link>
                             </h2>
                         </div>
 
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                        <div className="prose max-w-none text-gray-500 dark:text-gray-400" data-aos="fade-up" data-aos-duration="810">
                             {description}
                         </div>
                     </div>

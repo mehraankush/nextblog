@@ -14,11 +14,11 @@ export default function Footer() {
           <SocialIcon kind="twitter" href='/' size={6} />
         </div>
         <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          <div>Ankush Mehra</div>
+          <div>Love Babar</div>
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
-          <Link href="/">My Blog</Link>
+          <Link href="/">Code Help</Link>
         </div>
       </div>
     </footer>

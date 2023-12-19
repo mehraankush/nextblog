@@ -6,13 +6,13 @@ export default function Page() {
     <>
       <AuthorLayout>
         <p className="mb-5">
-            Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds
-        </p>
-        <p className="mb-5">
-            Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds
+        Love Babbar is a  Software Engineer and a Youtuber, primarily known for his Coding and Software Engineering skills. He is quite a popular figure among students as well as working professionals on various social media platforms, his YouTube and LinkedIn profiles amassing almost 1M subscribers .
         </p>
         <p>
-            Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds
+        He is also mentored 500k+ students  so far. He has done his B.Tech (IT) from the Netaji Subhash Institute of Technology (NSIT), Delhi, and worked in  Amazon and Microsoft
+          </p>
+        <p className="mb-5">
+        At Code Help, we aim to provide new students with proper mentorship and education for their learning and growth.
         </p>
       </AuthorLayout>
     </>

@@ -10,8 +10,7 @@ const ReadMore = ({ slug,title } :ReadmeProps) => {
   return (
     <Link
     href={`${slug}`}
-    className="text-primary-500 hover:text-white transition-all duration-100 ease-in-out"
-    aria-label={`Read more: "${title}"`}
+    className="text-primary-500 hover:text-black/60 dark:hover:text-white/60 transition-all duration-100 ease-in-out" data-aos="fade-right" data-aos-duration="800"
   >
     Read more &rarr;
   </Link>
