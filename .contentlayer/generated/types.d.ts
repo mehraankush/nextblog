@@ -29,7 +29,6 @@ export type Post = {
   title: string
   description?: string | undefined
   date: IsoDateTimeString
-  img: string
   /** MDX file body */
   body: MDX
   slug: string

@@ -1,6 +1,11 @@
 import Card from '@/components/Project/Card'
 import projectsData from '@/data/projectsData'
 
+export const metadata = {
+  title: "Projects - Love Babbar",
+  description: "Projects - Love Babbar",
+}
+
 
 export default function Projects() {
   return (

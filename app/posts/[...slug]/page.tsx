@@ -5,6 +5,7 @@ import { Metadata } from "next"
 import { Mdx } from "@/components/mdx-components"
 import { allPosts } from "@/.contentlayer/generated"
 import BlogHeading from "@/components/Blog/BlogHeader"
+import SyntaxHighlighter from 'react-syntax-highlighter';
 
 interface PostProps {
   params: {

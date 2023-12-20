@@ -1,8 +1,7 @@
-
-import { defineDocumentType, makeSource , ComputedFields} from "contentlayer/source-files"
+import { defineDocumentType, makeSource, ComputedFields } from "contentlayer/source-files"
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
-const computedFields:ComputedFields = {
+const computedFields: ComputedFields = {
   slug: {
     type: "string",
     resolve: (doc) => `/${doc._raw.flattenedPath}`,
@@ -48,6 +47,7 @@ export const Post = defineDocumentType(() => ({
   },
   computedFields,
 }))
+
 
 export default makeSource({
   contentDirPath: "./content",

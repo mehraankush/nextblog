@@ -1,5 +1,10 @@
 import AuthorLayout from "@/components/about/AuthorLayout";
 
+export const metadata = {
+  title: "About - Love Babbar",
+  description: "About - Love Babbar",
+}
+
 export default function Page() {
 
   return (
