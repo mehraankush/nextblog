@@ -29,7 +29,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ posts }) => {
             setSearchResults(results);
             setSetsearchCheck(results.length > 0);
         }
-    }, 100);
+    }, 800);
 
     const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value;
@@ -39,13 +39,16 @@ const SearchBar: React.FC<SearchBarProps> = ({ posts }) => {
     };
 
     return (
-        <div className="flex justify-center flex-col">
+        <div className="flex justify-center flex-col ">
+            <div className=" text-center">
+
             <input
                 onChange={handleSearchChange}
                 type="text"
                 placeholder="Search"
                 className="p-3 outline-none w-4/5 rounded-full"
             />
+            </div>
             {setsearchCheck ? (
                 <ul className="divide-y divide-gray-200 dark:divide-gray-700">
                     {searchResults?.length > 0 &&

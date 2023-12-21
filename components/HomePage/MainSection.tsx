@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import SearchBar from './SearchBar'
+import Artical from './Articals'
 
 const MAX_DISPLAY = 5
 
-export default function MainSection({ posts }:any) {
+export default function MainSection({ posts }: any) {
 
   return (
     <>
@@ -16,7 +16,16 @@ export default function MainSection({ posts }:any) {
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             A blog created with Next.js and Tailwind.css in Markdown
           </p>
-          <SearchBar posts={posts}/>
+
+          {!posts.length && 'No posts Avalible'}
+          <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+            {!posts.length && 'No posts found.'}
+            {posts.slice(0, MAX_DISPLAY).map((post: any) => (
+              <li key={post.slug} className="py-12">
+                <Artical {...post} />
+              </li>
+            ))}
+          </ul>
         </div>
 
         {posts.length > MAX_DISPLAY && (
