@@ -6,7 +6,7 @@ import { datetime } from '@/lib/TimeFormator'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Artical = ({ slug, date, title, description ,img}:any) => {
+const Artical = ({ slug, date, title, description }:any) => {
 
     useEffect(() => {
         AOS.init({
