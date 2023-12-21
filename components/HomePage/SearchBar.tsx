@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import debounce from "lodash.debounce";
 import Artical from "./Articals";
+import Image from "next/image";
 
 interface Post {
     slug: string;
@@ -40,15 +41,20 @@ const SearchBar: React.FC<SearchBarProps> = ({ posts }) => {
 
     return (
         <div className="flex justify-center flex-col ">
-            <div className=" text-center">
 
-            <input
-                onChange={handleSearchChange}
-                type="text"
-                placeholder="Search"
-                className="p-3 outline-none w-4/5 rounded-full"
-            />
+            <div className="flex justify-center  ">
+                <div className="w-4/5 flex   rounded-full p-2 bg-gray-400/20">
+
+                    <Image alt="ssearchIcon" width={30} height={30} src='/search.svg'/>
+                    <input
+                        onChange={handleSearchChange}
+                        type="text"
+                        placeholder="Search"
+                        className="p-1 outline-none bg-transparent"
+                    />
+                </div>
             </div>
+
             {setsearchCheck ? (
                 <ul className="divide-y divide-gray-200 dark:divide-gray-700">
                     {searchResults?.length > 0 &&
