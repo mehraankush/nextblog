@@ -6,7 +6,14 @@ import { datetime } from '@/lib/TimeFormator'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Artical = ({ slug, date, title, description }:any) => {
+interface Post {
+    slug: string;
+    date: Date;
+    title: string;
+    description: string;
+}
+
+const Artical = ({ slug, date, title, description }:Post) => {
 
     useEffect(() => {
         AOS.init({
